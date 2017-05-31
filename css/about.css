@@ -1,0 +1,144 @@
+/*About page*/
+
+#about-me-home, #about-me-description, #about-me-interest{
+	position: relative;
+  	z-index:2;
+  	min-width: 100%;
+  	-webkit-transition: -webkit-transform 0.3s;
+  	-moz-transition: -moz-transform 0.3s;
+  	transition: transform 0.3s;
+}
+#about-me-home.nav-is-visible, #about-me-description.nav-is-visible, #about-me-interest.nav-is-visible {
+  	-webkit-transform: translateX(-260px);
+  	-moz-transform: translateX(-260px);
+ 	-ms-transform: translateX(-260px);
+  	-o-transform: translateX(-260px);
+  	transform: translateX(-260px);
+}
+@media only screen and (min-width : 801px) {
+#about-me-home.nav-is-visible, #about-me-description.nav-is-visible, #about-me-interest.nav-is-visible {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+#about-me-home::before, #about-me-description::before,#about-me-interest::before{
+	display: none;
+    content: 'desktop';
+	}  		
+}
+#about-me-home::before, #about-me-description::before,#about-me-interest::before{
+	display: none;
+    content: 'mobile';
+}
+.about-me-home-wrapper{
+	width:100%;
+	padding:90px 100px;
+	text-align:center;
+}
+.about-me-home-bg{
+	background-image: url('https://static.pexels.com/photos/6051/bench-couple-love-people-large.jpg');
+	width: 100%;
+    height: 330px;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+	background-repeat:no-repeat;
+    overflow: hidden;
+}
+.about-me-home-container{
+	 width:100%;
+	 margin:0 auto;
+	 padding:80px 0 0 0;
+}
+#about-me-description{
+  	padding:90px 280px;
+	background-color:#eaeaec;	
+}
+.about-me-description-wrapper{
+	width:100%;	
+}
+.about-me-description-container{
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+}
+.about-me-description-img{
+	margin-bottom:50px;		
+}
+#about-me-interest{	
+	padding:90px 280px;
+	background-color:#fff;
+}
+.about-me-interest-wrapper{
+	width:100%;	
+}
+.about-me-interest-container{
+	width:100%;
+	margin:0 auto;
+	text-align:center;
+}
+/*INTEREST PART*/
+.interest-wrapper{
+	width:100%;	
+	text-align:center;
+}
+.interest-col{
+	width: 33.33%;
+	float: left;
+	display:line-block;
+	padding: 0 5%;	
+}
+.interest-icon{
+    width: 100px;
+    max-width: 100%;
+	height: 100px;
+    display: block;
+	background-size:cover;
+    margin: 0 auto;	
+}
+.interest-icon{margin-top:50px;}
+
+.interest-1{
+	background:url("../images/icon-design.png");
+	background-position:center center;
+	background-repeat:no-repeat;	
+}
+.interest-2{
+	 background:url("../images/icon-apps.png");
+	 background-position:center center;
+	 background-repeat:no-repeat;	
+}
+.interest-3{
+	 background:url("../images/icon-ux.png");
+	 background-position:center center;
+	 background-repeat:no-repeat;		
+}
+/*For Laptops*/
+@media only screen and (min-width : 1225px) and (max-width: 1600px)  {
+#about-me-description, #about-me-interest{
+	padding:90px 100px;	
+}
+}
+/*-----------For IPAD/TABLETS Landscape-------------*/
+@media only screen and (max-width : 1224px) {
+#about-me-description, #about-me-interest{
+  	padding:50px 50px;
+}
+}
+@media only screen and (max-width: 800px) {
+.about-me-home-wrapper{
+	padding:60px 20px;	
+}	
+#about-me-description, #about-me-interest{
+  	padding:50px 20px;
+}
+.interest-col{
+	width: 100%;
+	float: none;
+}
+}

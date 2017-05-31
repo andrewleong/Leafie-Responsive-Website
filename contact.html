@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Contact</title>
+	<meta name="description" content="The Internet of Things">
+	<meta name="keywords" content="">
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+     
+	<!-- Links -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/contact.css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css"> 
+	<link rel="stylesheet" href="css/mobile.css"> 
+    <!--To Support Form Validation-->
+    <script src="https://code.jquery.com/jquery-1.8.3.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+	<!-- Modernizr is a libary for detecting HTML and CSS, it tells whether a browser supports the specific feature -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> 
+</head>
+
+<body onLoad="preLoad();">
+	<div class="preload"></div>
+	<header>
+		<div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+		<nav class="main-nav-wrapper">
+			<ul class="main-nav">
+            	<li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Project</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="contact.html">Contact</a></li>	
+			</ul> 
+		</nav> 
+		<a href="#0" class="nav-trigger"><span></span></a>
+	</header>
+	<!-- Contact -->
+    <!--Contact Bg img taken from https://www.pexels.com/photo/desk-laptop-notebook-workspace-7098/-->
+	<section id="contact">
+		<div class="contact-wrapper contact-bg">
+        	<div class="contact-container">
+            	<h7>Contact Me</h7>
+           </div>
+        </div>
+	</section>
+    <!-- Contact FORM -->
+    <section id="contact-form">
+    	<!--Form Validation Jquery taken from: http://jqueryvalidation.org/-->
+		<form action="#" method="post" name="form" id="FormValidate">
+             <div class="form-container">
+				<p class="form-text" id="form-text-1">Your Name<br />
+					<input id="Field1" placeholder="Name*" name="YourName" type="text" class="field text fn" value="" size="8" tabindex="1" required>
+				</p>
+				<p class="form-text">Your Email<br />
+                    <input id="Field2" placeholder="Email*" name="YourEmail" type="email" spellcheck="false" value="" maxlength="255" tabindex="2">
+				</p>
+				<p class="form-text">Your Message<br />
+    				<textarea id="Field3" placeholder="Message*" name="YourMsg" spellcheck="true" rows="10" cols="50" tabindex="4"></textarea>
+                </p>
+				<p class="submit"><input id="send" name="send" type="submit" value="Send"/></p>
+			</div>
+		</form>
+        <script>
+		$(function(){
+			$("#FormValidate").validate();
+		});
+		</script>
+		<div id="get-in-touch">
+			<div class="get-in-touch">
+				<h4>Get in touch with me</h4>
+				<p class="get-in-touch-desc">Please use the contact form to contact me if you have any questions or ideas about my internet of things project. I will reply to your message as soon as I can!</p>
+			</div>
+			<div class="work-together">
+				<h4>Collaboration</h4>
+				<p class="get-in-touch-desc">If there are any project you would like to work with me, feel free to contact me! I will try to make myself to be available for a chat.</p>
+			</div>			
+		</div>
+		<div class="clear"></div>
+    </section>
+	<!-- Social Part -->
+    <section id="social">
+    	<div class="social-wrapper">
+        	<div class="social-container">
+                <div class="left-contact-me">
+					<p class="social-text">Latest Tweets</p>
+                    <div class="twitter-wrapper">
+                	<a class="twitter-timeline" href="https://twitter.com/drew_leongFun" data-widget-id="667760426478870529">Tweets by @drew_leongFun</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>          
+            	</div>
+                <div class="right-social-media">
+                	<p class="social-text">Get Social</p>
+                    <div class="social-icons">
+                    	<div class="social-icons-container">
+                        	<a href="https://twitter.com/drew_leongFun" class="social-media-box social-twitter" target="_blank"></a>	
+                            <a href="https://www.facebook.com/andrew.leong.370" class="social-media-box social-facebook" target="_blank"></a>
+       						<a href="https://www.behance.net/AndrewLeong93" class="social-media-box social-behance" target="_blank"></a>
+                       </div>
+                    </div>
+                    <div id="contact-info" class="vcard">
+				 		<span class="fn n">
+    						<span class="given-name">Andrew Weng Yew</span>
+  							<span class="family-name">Leong</span>
+						</span>
+             			<div class="adr">
+  							<div class="street-address">2510 Yonge Street, Suite 203. Toronto, ON, M4P 2H7</div>
+  							<span class="country-name">United Kingdom</span>
+						</div>
+                        <div>Email: <a class="email" href="mailto:AndrewLeong@uwe.com">AndrewLeong@live.uwe.com</a></div>
+ 						<div class="tel"><span class="type">Phone: </span><span class="value">+44 79 2270 2340</span></div>
+					</div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+	<footer id="footer">
+    	<div class="footer-wrapper">
+            <nav class="nav-bottom"> 
+            	<ul class="ul-footer">
+                	<li><a href="index.html">Home</a></li>
+                	<li><a href="about.html">About Me</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">Copyright &copy; 2015 | Andrew Leong Weng Yew </p> 
+            <div class="clear"> </div>
+     	</div>
+    </footer>
+<script src="js/main.js"></script> <!-- Main Js -->
+</body>
+</html>

@@ -1,0 +1,151 @@
+@charset "utf-8";
+/*Contact ME*/
+#contact,#contact-form {
+  position: relative;
+  z-index:2;
+  min-width: 100%;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  transition: transform 0.3s;
+  background:#F04E50;
+}
+#contact.nav-is-visible, #contact-form.nav-is-visible {
+  -webkit-transform: translateX(-260px);
+  -moz-transform: translateX(-260px);
+  -ms-transform: translateX(-260px);
+  -o-transform: translateX(-260px);
+  transform: translateX(-260px);
+}
+@media only screen and (min-width : 801px) {
+  #contact.nav-is-visible, #contact-form.nav-is-visible {
+    -webkit-transform: translateX(0);
+    -moz-transform: translateX(0);
+    -ms-transform: translateX(0);
+    -o-transform: translateX(0);
+    transform: translateX(0);
+  }
+#contact::before, #contact-form::before{
+	display: none;
+    content: 'desktop';}  
+}
+#contact::before, #contact-form::before{
+	display: none;
+    content: 'mobile';}
+/*-------------Contact Me Main----------*/
+.contact-wrapper{
+	width:100%;
+	padding:90px 100px;
+	text-align:center;
+}
+.contact-bg{
+	background-image: url('https://static.pexels.com/photos/7098/space-desk-laptop-notebook-large.jpg');
+	width: 100%;
+    height: 330px;
+    -webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    overflow: hidden;
+}
+.contact-container{
+	width:100%;
+	margin:0 auto;
+	padding:80px 0 0 0;
+}
+#contact-form{
+	padding:90px 280px;
+	background:#fff;	
+}
+.form-container{
+	margin-top: 32px;
+    width: 50%;
+    float: left;
+    padding-left: 5%;
+}
+fieldset {
+  border: 0;
+  padding: 0;
+}
+input[type=text],
+input[type=email],
+textarea {
+	width: 90%;
+    padding: 16px 0 16px 16px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+	color:#fff;
+    border: none;
+    border-radius: 5px;
+	background:#222;
+}
+input[type=text],
+input[type=email]{
+  	width: 90%;
+  	padding: 10px 10px;
+}
+input[type=text]:focus,
+input[type=email]:focus,
+textarea:focus {
+  	outline: 0;
+}
+#Field1-error, #Field2-error{
+	display:inline-block;
+	color:#FF0004;	
+}
+#send{
+    background: #222;
+    width: 30%;
+    padding: 16px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 15px;
+    color: #fff;
+	border-radius: 5px;
+	border: none;
+}
+#get-in-touch{
+	margin: 3.5em 0 0;
+    width: 37%;
+    float: right;
+    padding: 0 5%;
+}
+.get-in-touch{
+    width: 100%;
+    display: block;
+}
+.work-together{
+	width: 100%;
+    display: block;
+}
+/*For Laptops*/
+@media only screen and (min-width : 1225px) and (max-width: 1600px)  {
+#contact-form{
+	padding:90px 100px;	
+}
+}
+/*-----------For IPAD/TABLETS Landscape-------------*/
+@media only screen and (max-width : 1224px) {
+#contact-form{
+  	padding:50px 50px;
+}
+}
+@media only screen and (max-width: 800px) {
+.contact-wrapper{
+	padding:60px 20px;
+}
+#contact-form{
+  	padding:50px 20px;
+}
+.form-container{
+	float:none;
+	 width: 100%;	
+}
+#get-in-touch{
+	margin: 50px 0 0 0;
+    width: 100%;
+    float: none;
+}
+}

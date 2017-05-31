@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Andrew Leong</title>
+	<meta name="description" content="The Internet of Things">
+	<meta name="keywords" content="">
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    
+    <!-- Slider CSS -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.css">
+	<!-- Links -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css"> 
+	<link rel="stylesheet" href="css/mobile.css"> 
+   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!--SLider JS-->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/flickity/1.0.0/flickity.pkgd.js"></script>
+	 <!-- Modernizr is a libary for detecting HTML and CSS, it tells whether a browser supports the specific feature -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> 
+</head>
+<!--Loading Screen-->
+<body onLoad="preLoad();">
+	<div class="preload"></div>
+    <!--Fullscreen Vid covering the page-->
+	<div class="video-container-1"><iframe src="https://www.youtube.com/embed/Hbno20HldCY?rel=0" width="560" height="315" id="video-1"></iframe></div>
+    <div class="close-vid-btn-1"></div>
+    <!--Header-->
+    <header>
+    <!--I followed this tutorial from: https://codyhouse.co/gem/secondary-sliding-navigation/for making the mobile nav-->
+		<div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+        <!--Navigation-->
+		<nav class="main-nav-wrapper">
+			<ul class="main-nav">
+            	<li><a href="index.html">Home</a></li>
+				<li><a href="project.html">Project</a></li>
+                <li><a href="about.html">About Me</a></li>
+				<li><a href="contact.html">Contact</a></li>	
+			</ul> 
+		</nav> 
+		<a href="#0" class="nav-trigger"><span></span></a>
+	</header>
+	<!-- HOME PAGE -->
+	<section id="home">
+     	<!--Flickity is a jquery slider plugin I used from http://flickity.metafizzy.co/-->
+		<div class="gallery js-flickity" data-flickity-options='{ "wrapAround": true, "autoPlay": 2000}'>
+			<!--Bg 1 img taken from https://stocksnap.io/photo/CRNZFWFZYG-->
+  			<div id="bg1" class="images">
+            	<div class="slider1-wrapper">
+                	<div class="slider1-content">
+  						<h1>The interactive plant</h1>
+    					<h2>Our team has created a new companion for you.</h2>
+               			<div class="slider1-btn"><a href="project.html"><p class="learn-more">Learn More</p></a></div>
+                    </div>   
+                </div>
+  			</div>
+			<!--Bg 2 img taken from https://www.pexels.com/photo/electronics-circuit-board-11406/-->
+  			<div id="bg2" class="images">
+				<div class="slider2-wrapper">
+                	<div class="slider2-content">
+  						<h1>A new experience with plants</h1>
+    					<h2>Plants that interact with you with twitter</h2>
+                    </div>   
+                </div>
+  			</div>
+			<!--Bg 3 img taken from https://www.pexels.com/photo/macbook-pro-iphone-cup-desk-7974/-->
+ 			 <div id="bg3" class="images">
+				<div class="slider3-wrapper">
+                	<div class="slider3-content">
+  						<h1>An intelligent plant with personality</h1>
+    					<h2>Our smart plant tweets you message and post images based on its personality</h2>
+                    </div>   
+                </div>
+ 			 </div>
+  		</div>
+       	<a class="floating-arrow-wrapper floating-effect" href="#overview">
+    		<span class="floating-arrow"><img src="images/floating-arrow.png" alt=""></span>
+  		</a>
+	</section>
+	<!-- Overview Page/Description -->
+	<section id="overview">
+    	<div class="overview-wrapper"> 
+        	<div class="overview-container">
+            	<h3>Introducing Leafie</h3>
+				<!--Overview.jpg taken from https://stocksnap.io/photo/BSW3B9OM9X-->
+            	<div class="left-overview"><img src="images/overview.jpg" alt=""></div>
+            	<div class="right-overview">
+                	<div class="right-overview-wrapper">
+						<h4>A new companion for you</h4>
+						<p class="overview-desc">We have developed a new smart plant kit which interacts with people. It is packed with loads of features such as tweeting, selfies and it has a personality!</p>
+                        	<br>
+                        <h4>A Plant that tweets to you</h4>
+						<p class="overview-desc">Leafie is a smart plant that is able to tweet to you when its thirsty. It acts as a great reminder to the users, so that they do not forget to water their plants.</p>
+                        	<br>
+                        <h4>A Plant that takes selfies</h4>
+						<p class="overview-desc">Whenever Leafie is watered, it will automatically take a selfie by itself and post a tweet of appreciation with photo.</p>
+                   </div>
+				</div>
+            </div>
+            <div class="clear"></div>
+		</div>
+	</section>
+    <!--DEMOREEL/PLAY VIDEO PART-->
+	<!--Demoreel Img taken from https://pixabay.com/en/apple-iphone-6s-plus-mobile-1034304/-->
+	<section id="demoreel">
+    	<div class="demoreel-wrapper">
+			<h3>LEAFIE Prototype Demo video</h3>
+			<p class="vid-desc">A walkthrough with our LEAFIE prototype.</p>
+			<div id="play-vid-btn-1"><img src="images/play-btn.png" alt=""></div>
+        </div>
+	</section>
+    <!--MAIN PAGE FEATURE PART-->
+	<section id="feature" class="main-tile tile-container">
+        <div class="each-tile">
+        	<div class="tile-text">
+        		<div class="tile-text-wrapper">
+        		<figure class="tile-img"><span class="icon icon-1"></span></figure>
+        		<h5>Moisture Sensor</h5>
+            	<p class="tile-desc">The moisture sensor is able to receive and transmit data.</p>
+        		</div>
+        	</div>
+        </div>
+        <div class="each-tile">
+        	<div class="tile-text">
+            	<div class="tile-text-wrapper">
+                <figure class="tile-img"><span class="icon icon-2"></span></figure>
+                <h5>Selfie</h5>
+                <p class="tile-desc">Leafie is able to take a selfie photograph when it is watered.</p>
+                </div>
+            </div>
+        </div>
+        <div class="each-tile">
+        	<div class="tile-text">
+            	<div class="tile-text-wrapper">
+                <figure class="tile-img"><span class="icon icon-3"></span></figure>
+                <h5>Twitter</h5>
+                <p class="tile-desc">Leafie owns a twitter account where it can post tweets and tag the users.</p>
+                </div>
+            </div>
+        </div>
+        <div class="each-tile">
+        	<div class="tile-text">
+            	<div class="tile-text-wrapper">
+                <figure class="tile-img"><span class="icon icon-4"></span></figure>
+                <h5>Personality</h5>
+                <p class="tile-desc">Leafie can have different types of personality where the user can choose from.</p>
+                </div>
+            </div>
+        </div>
+        <div class="each-tile">
+        	<div class="tile-text">
+            	<div class="tile-text-wrapper">
+                <figure class="tile-img"><span class="icon icon-5"></span></figure>
+                <h5>Smart Plant</h5>
+                <p class="tile-desc">Leafie is not a normal plant, it can interact with users through twitter. </p>
+                </div>
+            </div>
+       </div>
+       <div class="each-tile">
+       		<div class="tile-text">
+       			<div class="tile-text-wrapper">
+                <figure class="tile-img"><span class="icon icon-6"></span></figure>
+                <h5>Reminder</h5>
+                <p class="tile-desc">Leafie acts as a smart reminder, so that the users will not forget to water it.</p>
+                </div>
+            </div>
+       </div>
+       <div class="each-tile">
+       		<div class="tile-text">
+            	<div class="tile-text-wrapper">
+                <figure class="tile-img"><span class="icon icon-7"></span></figure>
+                <h5>Convenient</h5>
+                <p class="tile-desc">The set up for Leafie is rather easy and the user do not have to do much.</p>
+                </div>
+            </div>
+       </div>
+       <div class="each-tile">
+       		<div class="tile-text">
+            	<div class="tile-text-wrapper">
+                <figure class="tile-img"><span class="icon icon-8"></span></figure>
+                <h5>Arduino</h5>
+                <p class="tile-desc">The main technology used to power Leafie is an arduino. It links to most of the components.</p>
+                </div>
+            </div>
+       </div>
+    </section>    
+	<!-- Social Part -->
+    <section id="social">
+    	<div class="social-wrapper">
+        	<div class="social-container">
+                <div class="left-contact-me">
+					<p class="social-text">Latest Tweets</p>
+                    <div class="twitter-wrapper">
+                	<a class="twitter-timeline" href="https://twitter.com/drew_leongFun" data-widget-id="667760426478870529">Tweets by @drew_leongFun</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>          
+            	</div>
+                <div class="right-social-media">
+                	<p class="social-text">Get Social</p>
+                    <div class="social-icons">
+                    	<div class="social-icons-container">
+                        	<a href="https://twitter.com/drew_leongFun" class="social-media-box social-twitter" target="_blank"></a>	
+                            <a href="https://www.facebook.com/andrew.leong.370" class="social-media-box social-facebook" target="_blank"></a>
+       						<a href="https://www.behance.net/AndrewLeong93" class="social-media-box social-behance" target="_blank"></a>
+                       </div>
+                    </div>
+                    <!--This is the Hcard, I used Hcard creator from: http://microformats.org/code/hcard/creator-->
+                    <div id="contact-info" class="vcard">
+				 		<span class="fn n">
+    						<span class="given-name">Andrew Weng Yew</span>
+  							<span class="family-name">Leong</span>
+						</span>
+             			<div class="adr">
+  							<div class="street-address">2510 Yonge Street, Suite 203. Toronto, ON, M4P 2H7</div>
+  							<span class="country-name">United Kingdom</span>
+						</div>
+                        <div>Email: <a class="email" href="mailto:AndrewLeong@uwe.com">AndrewLeong@live.uwe.com</a></div>
+ 						<div class="tel"><span class="type">Phone: </span><span class="value">+44 79 2270 2340</span></div>
+					</div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+	<footer id="footer">
+    	<div class="footer-wrapper">
+            <nav class="nav-bottom"> 
+            	<ul class="ul-footer">
+                	<li><a href="index.html">Home</a></li>
+                	<li><a href="about.html">About Me</a></li>
+                    <li><a href="project.html">Project</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">Copyright &copy; 2015 | Andrew Leong Weng Yew </p> 
+            <div class="clear"> </div>
+     	</div>
+    </footer>
+<script src="js/main.js"></script> <!-- Main Js -->
+</body>
+</html>

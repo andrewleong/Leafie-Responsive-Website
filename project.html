@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>Project</title>
+	<meta name="description" content="The Internet of Things">
+	<meta name="keywords" content="">
+	
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="favicon/favicon.ico" type="image/x-icon">
+	<link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    
+	<!-- Links -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/project.css">
+	<link rel="stylesheet" href="css/style.css"> 
+	<link rel="stylesheet" href="css/mobile.css"> 
+   	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<!-- Modernizr is a libary for detecting HTML and CSS, it tells whether a browser supports the specific feature -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script> 
+</head>
+
+<body onLoad="preLoad();">
+	<div class="preload"></div>
+    <!--Fullscreen how-it-works-video-->
+    <!--<div class="video-container-2">
+		<iframe src="https://www.youtube.com/embed/wTcNtgA6gHs?rel=0" width="560" height="315" id="video-2">						        </iframe>
+    </div>
+    <div class="close-vid-btn-2"></div>-->
+    <!-- LIGHTBOX for gallery-->
+    <!--Lightbox is placed outside due to parent sections position relative-->
+        <div class="lightbox" id="box-1">
+       		<div class="lightbox-close"></div>
+     		<div class="lightbox-wrapper">
+       			<img src="images/slider-bg1.jpg" alt="">
+      			<div class="lightbox-caption">
+        			<p class="lightbox-text"></p>
+      			</div>
+      		</div>
+    	</div>
+        <div class="lightbox" id="box-2">
+       		<div class="lightbox-close"></div>
+     		<div class="lightbox-wrapper">
+       			<img src="images/slider-bg2.jpg" alt="">
+      			<div class="lightbox-caption">
+        			<p class="lightbox-text"></p>
+      			</div>
+      		</div>
+    	</div>
+        <div class="lightbox" id="box-3">
+       		<div class="lightbox-close"></div>
+     		<div class="lightbox-wrapper">
+       			<img src="images/lightbox-3.jpg" alt="">
+      			<div class="lightbox-caption">
+        			<p class="lightbox-text"></p>
+      			</div>
+      		</div>
+    	</div>
+        <div class="lightbox" id="box-4">
+       		<div class="lightbox-close"></div>
+     		<div class="lightbox-wrapper">
+       			<img src="images/how-it-works-1.jpg" alt="">
+      			<div class="lightbox-caption">
+        			<p class="lightbox-text"></p>
+      			</div>
+      		</div>
+    	</div>
+        <div class="lightbox" id="box-5">
+       		<div class="lightbox-close"></div>
+     		<div class="lightbox-wrapper">
+       			<img src="images/lightbox-5.jpg" alt="">
+      			<div class="lightbox-caption">
+        			<p class="lightbox-text"></p>
+      			</div>
+      		</div>
+    	</div>
+        <div class="lightbox" id="box-6">
+       		<div class="lightbox-close"></div>
+     		<div class="lightbox-wrapper">
+       			<img src="images/lightbox-6.jpg" alt="">
+      			<div class="lightbox-caption">
+        			<p class="lightbox-text"></p>
+      			</div>
+      		</div>
+    	</div>
+    <!--Header-->   
+	<header>
+		<div class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo"></a></div>
+		<nav class="main-nav-wrapper">
+			<ul class="main-nav">
+            	<li><a href="index.html">Home</a></li>
+                <li><a href="project.html">Project</a></li>
+				<li><a href="about.html">About Me</a></li>
+				<li><a href="contact.html">Contact</a></li>	
+			</ul> 
+		</nav> 
+		<a href="#0" class="nav-trigger"><span></span></a>
+	</header>
+	<!--PROJECT HOME PAGE -->
+	<section id="project-home">
+		<div class="project-home-wrapper project-home-bg">
+        	<div class="project-home-container">
+            	<h7>project leafie</h7>
+            </div>
+        </div>
+	</section>
+	<!-- PROJECT FEATURE 1 -->
+	<section id="project-feature">
+    	<div class="project-feature-wrapper"> 
+        	<div class="project-feature-container">
+            	<h3>What is LEAFIE?</h3>
+                <div class="project-feature-inner-wrapper">
+                	<div class="project-feature-left-img">
+                    	<!--Feature 1 Img taken from https://pixabay.com/en/stock-iphone-business-mobile-phone-624712/-->
+                		<div class="feature-1"><img src="images/feature-1.jpg" alt=""></div>
+                	</div>
+                 	<div class="project-feature-right-text">
+                		<div class="project-feature-right-wrapper">
+                    		<h6>Intelligent plant that tweets to you</h6>
+                        	<p class="feature-disc">LEAFIE is a smart plant that utilizes twitter to send tweets to the user, prompting them to water LEAFIE when it is feeling thirsty. </p>
+                    	</div>
+                	</div>
+                    <div class="clear"></div>
+                </div>
+                <div class="project-feature-inner-wrapper">
+                 	<div class="project-feature-right-img">
+                		<img src="images/feature-2.jpg" alt="">
+                	</div>
+               		<div class="project-feature-left-text">
+                   		<div class="project-feature-left-wrapper">
+                    		<h6>LEAFIE takes a selfie when watered</h6>
+                        	<p class="feature-disc">Whenever the user waters LEAFIE, it will detect the level of moisture. If the moisture is sufficient, LEAFIE will take a selfie to tweet its photo and post a message of gratitude to the user.</p>
+                    	</div>
+                	</div>
+               		<div class="clear"></div>
+               </div>
+               <div class="project-feature-inner-wrapper">
+               		<div class="project-feature-left-img">
+                   		<img src="images/feature-3.jpg" alt="">
+                	</div>
+                	<div class="project-feature-right-text">
+                		<div class="project-feature-right-wrapper">
+                    		<h6>A plant with personality</h6>
+                        	<p class="feature-disc">The photo selfies and messages which LEAFIE tweets are based on its personality. This provides a better experience and interaction to the user, as it becomes more of a human behaviour that makes the user treat it like a living thing.</p>
+                    	</div>
+                	</div>
+               </div>
+               <div class="clear"></div>
+               <div class="presentation-btn"><a href="presentation-slide.pdf" target="_blank" style="text-decoration:none"><p class="slides">View Presentation Slides</p></a></div> 
+          	</div>
+		</div>
+	</section>
+    	<!-- PROJECT DESIGN REQUIREMENTS -->
+    <section id="project-design-requirements">
+    	<div class="project-design-requirements-wrapper">
+        	<div class="project-design-requirements-container">
+                <h3>List of Design Requirements</h3>
+                <p class="design-requirements">1.	Moisture Detection- ability to sense presence/lack of water in soil. </p>
+                <p class="design-requirements">2.	Wireless Internet Connection- ability to be connected to the internet and its own Twitter profile.</p>
+                <p class="design-requirements">3.	Self tweeting- ability to tweet its soil’s status of freshly-watered.</p>
+                <p class="design-requirements">4.	Selfie photography- ability to take photo of itself when watered.</p>
+                <p class="design-requirements">5.	Photo hosting- ability to upload photo of itself to its Twitter profile.</p>
+                <p class="design-requirements">6.	Data in array- ability to tweet different phrases with photo to avoid repetition.</p>
+                <p class="design-requirements">7.	Twitter tag- ability to tag other people/plants in its tweets.</p>
+                <p class="design-requirements">8.	Self response- ability to “comment” on other tweets with responses from a database of phrases.</p>
+                <p class="design-requirements">9.	Celebrations- ability to acknowledge holidays, birthdays, and other special occasions.</p>
+            </div>   
+		</div>
+    </section>
+    	<!-- PROJECT STRUCTURE DIAGRAM -->
+     <section id="project-structure-diagram">
+    	<div class="project-structure-diagram-wrapper">
+        	<div class="project-structure-diagram-container">
+        		<h3>Structure Diagram</h3>
+                <div class="project-structure-diagram-img project-structure-right-img">
+                   		<img src="images/structure-diagram.png" alt="">
+               	</div>
+                <div class="project-structure-left-text">
+                	<div class="project-structure-wrapper">
+                    	<h6>Process communication of Leafie</h6>
+                        <p class="feature-disc">The LEAFIE components are connected to the arduino, where it can send data back and forth to PubNub. The PubNub will act as a socket to process data into the website's database. The web database will pull the data to the twitter account where the target audience receives the data. While, the LEAFIE camera will receive data from the web database where it will post images to twitter.</p>
+               		</div>
+                </div>
+            </div>
+            <div class="clear"></div>
+            <div class="project-structure-diagram-container">
+            	<div class="project-structure-diagram-img project-structure-left-img">
+                        <img src="images/structure-diagram-2.png" alt="">
+               	</div>
+                <div class="project-structure-right-text">
+                	<div class="project-structure-wrapper">
+                    	<h6>Workflow of LEAFIE</h6>
+                        <p class="feature-disc">This diagram illustrates a step by step workflow of how LEAFIE engage interaction with users. It shows the flow of the actions taken and responses that LEAFIE sends and receives. </p>
+               		</div>
+                </div>
+            </div>
+            <div class="clear"></div> 
+         </div>
+     </section>
+    	 <!-- PROJECT MOCKUP -->
+     <section id="project-mockup">
+    	<div class="project-mockup-wrapper">
+        	<div class="project-design-mockup-container">
+        		<h3>Components & Mockups</h3>
+                <div class="left-project-mockup">
+                	<img src="images/mockup.png" alt="">
+                </div>
+            	<div class="right-project-mockup">
+                	<h4>Webcam</h4>
+                    <p class="project-mockup-desc"> It will be placed beside the plant to ensure photo is taken during an event of the plant being watered. The web cam will be connected to a laptop to send data to the arduino.</p>
+                    <h4>Moisture Sensor</h4>
+                   	<p class="project-mockup-desc">The Moisture Sensor is placed on the soil to detect the moisture level of the plant. Whenever the sensor detects insufficient water, it will prompt LEAFIE to send data to twitter, prompting user to water it. Likewise, when the plant is watered, it will send gratitude to the user.</p>
+                    <h4>Arduino</h4>
+                    <p class="project-mockup-desc">We will be using arduino as a platform to integrate the functions of the plant sending and receiving data from the twitter account.</p>
+                    <h4>Wi-fi/ Web</h4>
+                    <p class="project-mockup-desc">Everything comes together on a simple website, which translate the information about the soil, the captured photo, and a pre-written text into a tweet, which then is uploaded to LEAFIE's Twitter account.</p>    
+               	</div>
+            </div>
+            <div class="clear"> </div>
+            <div class="project-mockup-2">
+                	<img src="images/twitter-mockup.jpg" alt="">
+                </div>
+        </div>
+     </section>
+        <!-- PROJECT HOW IT WORKS VIDEO -->
+        <!--How-it-works Video Img taken from https://pixabay.com/en/office-freelancer-computer-business-583839/-->
+    <!--<section id="how-it-works-video">
+    	<div class="how-it-works-video-wrapper">
+        	<h3>Watch Process</h3>
+			<p class="vid-desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </p>
+			<div id="play-vid-btn-2"><img src="images/play-btn.png" alt=""></div>
+		</div>
+    </section>-->
+	<!-- PROJECT HOW IT WORKS -->
+    <section id="how-it-works">
+    	<div class="how-it-works-wrapper">
+        	<div class="how-it-works-container">
+            	<h3>How it Works?</h3>
+                <p class="how-it-works-sub">A step by step detailed walkthrough.</p>
+                <div class="how-it-works-box-spacing"></div>
+                	<div class="how-it-works-col top-spacing">
+                		<h6>1. Contant Moisture Sensor Detection</h6>
+                    	<p class="how-it-works-desc"> The moisture sensor which is placed in the user's plant, will constantly monitor and detect whether the plant's soil is moist or dry.</p>
+                	</div>
+                    <!--How it Works Img taken from https://pixabay.com/en/smartphone-telephone-typing-keying-431230/-->
+                	<div class="how-it-works-col how-it-works-col-right how-it-works-img-wrapper"> 
+                		<img src="images/how-it-works-1.jpg" alt="" width="781" height="618" /> 
+                	</div>
+                <div class="clear"></div>
+                <div class="how-it-works-box-spacing"></div>
+                	<div class="how-it-works-col top-spacing ">
+						<h6>2. The Plant Calls For Help</h6>
+						<p class="how-it-works-desc">If the sensor detects dry soil in the user's plant, it will send its data to the web database. There will be an array of sentences which the plant will tweet, but it will randomize one sentence to prompt the user to water it.</p>
+					</div>
+                	<div class="how-it-works-col how-it-works-col-right how-it-works-img-wrapper"> 
+                		<img src="images/how-it-works-2.jpg" alt="" width="752" height="466"/> 
+                	</div>
+                <div class="clear"></div>
+                <div class="how-it-works-box-spacing"></div> 
+					<div class="how-it-works-col top-spacing ">
+						<h6>3. User's twitter receives notification from plant's account</h6>
+						<p class="how-it-works-desc">The plant will tweet a random sentence to the user's twitter account, reminding the user to water it before it drys out.</p>
+					</div>
+					<div class="how-it-works-col how-it-works-col-right how-it-works-img-wrapper"> 
+                		<img src="images/how-it-works-3.jpg" alt="" width="752" height="466"/> 
+                	</div>
+                <div class="clear"></div>
+                <div class="how-it-works-box-spacing"></div>
+                	<div class="how-it-works-col top-spacing ">
+						<h6>4. User acknowledges and waters the plant</h6>
+						<p class="how-it-works-desc">Whenever the the user acknowledges the notification and waters the plant, the moisture sensor will do the same process in step 1. If the plant received enough moisture, it will take a selfie and tweet a photo with gratitude and thank the user.</p>
+					</div>
+					<div class="how-it-works-col how-it-works-col-right how-it-works-img-wrapper"> 
+                		<img src="images/how-it-works-4.jpg" alt="" width="752" height="466"/> 
+                	</div>
+                <div class="clear"></div>
+            </div>
+        </div>
+    </section>
+	<!-- GALLERY PAGE -->
+    <!--Gallery images taken from 
+    https://pixabay.com/static/uploads/photo/2015/11/08/21/38/apple-1034303_960_720.jpg
+    https://pixabay.com/static/uploads/photo/2014/09/23/21/21/iphone-6-458150_960_720.jpg
+    https://pixabay.com/static/uploads/photo/2014/09/23/21/23/iphone-6-458159_960_720.jpg
+    https://pixabay.com/static/uploads/photo/2014/10/03/17/39/glasses-472027_960_720.jpg
+    https://pixabay.com/static/uploads/photo/2015/11/08/21/38/apple-1034299_960_720.jpg-->
+   <section id="gallery">
+    	<div class="gallery-wrapper"><h3>Gallery</h3></div>
+        <div class="mainboard clearfix">
+        	<ul class="boxes">
+     	 		<div class="column-1 clearfix">
+                 	<li class="gallery-boxes box-1">
+                    	<div class="overlay"></div>
+                     		<div><p class="tile-title">A Healthy Leafie</p></div>
+                    </li>
+       				<li class="gallery-boxes box-2">
+                    	<div class="overlay"></div>
+          					<div><p class="tile-title">Overall Leafie Kit</p></div>
+                    </li>
+       			</div>
+				<div class="column-2 clearfix">
+        			<li class="gallery-boxes box-3">
+                    <div class="overlay"></div>
+                    	<div><p class="tile-title">Moisture Sensor</p></div>
+        			</li>
+        			<li class="gallery-boxes box-4">
+                    <div class="overlay"></div>
+         				 <div><p class="tile-title">Sensor Connected to Soil</p></div>
+        			</li>
+      			</div>
+				<div class="column-3 clearfix">      
+        			<li class="gallery-boxes box-5">
+                    <div class="overlay"></div>
+                    	<div><p class="tile-title">Arduino Kit</p></div>
+        			</li>
+        			<li class="gallery-boxes box-6">
+                    <div class="overlay"></div>
+         				 <div><p class="tile-title">Leafie Works With Any Plant</p></div>
+        			</li>
+     			</div>
+    		</ul>
+  		</div>
+        
+      </section>
+
+    <!-- Social Part -->
+    <section id="social">
+    	<div class="social-wrapper">
+        	<div class="social-container">
+                <div class="left-contact-me">
+					<p class="social-text">Latest Tweets</p>
+                    <div class="twitter-wrapper">
+                	<a class="twitter-timeline" href="https://twitter.com/drew_leongFun" data-widget-id="667760426478870529">Tweets by @drew_leongFun</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+					</div>          
+            	</div>
+                <div class="right-social-media">
+                	<p class="social-text">Connect</p>
+                    <div class="social-icons">
+                    	<div class="social-icons-container">
+                        	<a href="https://twitter.com/drew_leongFun" class="social-media-box social-twitter" target="_blank"></a>	
+                            <a href="https://www.facebook.com/andrew.leong.370" class="social-media-box social-facebook" target="_blank"></a>
+       						<a href="https://www.behance.net/AndrewLeong93" class="social-media-box social-behance" target="_blank"></a>
+                       </div>
+                    </div>
+                    <div id="contact-info" class="vcard">
+				 		<span class="fn n">
+    						<span class="given-name">Andrew Weng Yew</span>
+  							<span class="family-name">Leong</span>
+						</span>
+             			<div class="adr">
+  							<div class="street-address">2510 Yonge Street, Suite 203. Toronto, ON, M4P 2H7</div>
+  							<span class="country-name">United Kingdom</span>
+						</div>
+                        <div>Email: <a class="email" href="mailto:AndrewLeong@uwe.com">AndrewLeong@live.uwe.com</a></div>
+ 						<div class="tel"><span class="type">Phone: </span><span class="value">+44 79 2270 2340</span></div>
+					</div>
+                </div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </section>
+
+	<footer id="footer">
+    	<div class="footer-wrapper">
+            <nav class="nav-bottom"> 
+            	<ul class="ul-footer">
+                	<li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About Me</a></li>
+                  <li><a href="project.html">Project</a></li>
+                  <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </nav>
+            <p class="copyright">Copyright &copy; 2015 | Andrew Leong Weng Yew </p> 
+            <div class="clear"> </div>
+     	</div>
+    </footer>
+<script src="js/main.js"></script> <!-- Main Js -->
+</body>
+</html>

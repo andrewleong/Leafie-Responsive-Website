@@ -1,0 +1,273 @@
+/*Reset css taken from: http://meyerweb.com/eric/tools/css/reset/*/
+/*Reset css is to ensure browser is consistent, I also use it to store font styles */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, h7, h8, h9, h10, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size:100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, main {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img{
+	max-width:100%;
+	height:auto;
+}
+p{	
+	font-family:'Open Sans';
+	font-size:15px;	
+	line-height:1.7;
+	color:#333333;
+}
+/*HOME SLIDER H*/
+h1{
+	font-family: 'Montserrat', sans-serif;
+	color:white;
+	font-weight:700;
+	font-size: 60px;	
+}
+/*HOME SLIDER SUB H*/
+h2{
+	font-family: 'Roboto', sans-serif;
+	color:white;
+	font-size: 30px;
+	margin-top: 20px;
+}
+p.learn-more{
+	color:#fff;
+	margin-top: 8px;	
+}
+/*Overview H*/ /*Demoreel H*/
+h3{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 48px;
+	margin-bottom:30px;
+	color:#222;;
+	text-align:center;
+}
+#demoreel h3{
+	color:#fff;
+}
+/*Overview figure H*/
+h4{
+	font-family: 'Roboto', sans-serif;
+	color:#222;
+	font-size:24px;
+	font-weight:400;
+	text-align:left;
+	margin-bottom:24px;
+	text-transform: uppercase;
+}
+/*Overview figure P*/
+p.overview-desc{
+	margin-bottom:8px;
+}
+/*Video description P*/
+p.vid-desc{
+	color:#fff;	
+}
+/*Features figure H*/
+h5{
+	font-family: 'Roboto', sans-serif;
+	color:#222;
+	font-size:20px;	
+	font-weight:400;
+	margin-bottom:20px;	
+	text-transform: uppercase;
+}
+/*Features figure P*/
+p.tile-desc{
+	margin-bottom: 0;
+    padding: 0 20px;	
+}
+p.form-text{
+	font-family: 'Roboto', sans-serif;
+	font-size:20px;
+	text-align:left;
+	margin-top:30px;
+}
+p#form-text-1{margin-top:0;}
+/* Contact Desc */
+p.get-in-touch-desc{
+	margin-bottom:32px;
+}
+/*PROJECT FEATURES FIGURE H*/
+h6{
+	font-family: 'Roboto', sans-serif;
+	color:#222;
+	font-size:30px;
+	text-align:left;
+	margin-bottom:15px;
+	margin-top:100px;
+	text-transform: uppercase;
+}
+p.feature-disc{
+	font-size:16px;
+	margin-bottom:15px;
+	line-height:2;
+}
+p.slides{
+	color:#222222;
+	margin-top: 8px;	
+}
+/*PROJECT HOME H FONT*/
+h7{
+	font-family: 'Montserrat', sans-serif;
+	font-weight:600;
+	font-size: 50px;
+	color:#fff;	
+	text-transform: uppercase;
+}
+p.design-requirements{
+	font-size:16px;
+	margin-bottom:15px;
+	line-height:2;	
+	text-align:center;
+}
+p.project-mockup-desc{
+	margin-bottom:18px;	
+}
+#how-it-works-video h3{
+	color:#fff;
+}
+/*How-IT-Works P*/
+p.how-it-works-desc{
+	font-size:16px;
+	margin-bottom:8px;
+	line-height:2;
+}
+/*How It Works sub H*/
+p.how-it-works-sub{
+	font-family: 'Roboto', sans-serif;
+	font-size: 26px;
+	text-align:center;
+}
+/*Gallery tile P*/
+p.tile-title {
+	color:#fff;
+	font-size:26px;
+	position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    width: 50%;
+    height: 35%;
+    margin: auto;
+}
+/*FOR THE SOCIAL MEDIA TITLE*/
+.social-text{
+	font-family: 'Roboto', sans-serif;
+	color:#fff;
+	font-size:26px;
+	margin-bottom:20px;
+	text-align:center;
+}
+/*About Me INTEREST FIGURE H*/
+p.interest-sub{
+	font-family: 'Roboto', sans-serif;
+	font-size:30px;
+	margin-top:30px;
+	margin-bottom:10px;
+}
+p.lightbox-text{
+	color:#fff;	
+}
+/*For Laptops*/
+@media only screen and (min-width : 1225px) and (max-width: 1600px)  {
+/*Overview figure H*/
+h4{
+	font-size:20px;
+	margin-bottom:20px;
+}
+p.how-it-works-sub{
+	font-size: 24px;
+}
+}
+/*For Tablet Landscape*/
+@media only screen and (max-width : 1224px) {
+h4{
+	margin-bottom:16px;
+}	
+h3{
+	font-size:40px;
+}
+h6{
+	font-size:28px;
+	margin-bottom:10px;
+	margin-top:50px;
+}
+p.feature-disc{
+	line-height:1.8;
+}
+}
+/*For Small Tablet Landscape*/
+@media only screen and (min-width : 801px) and (max-width : 1024px) {
+
+}
+/*For Tablet Portrait & Mobile Landscape*/
+@media only screen and (max-width: 800px) {
+h1{
+	font-size:38px;
+}
+h2{
+	font-size:18px;
+	margin-left:20px;
+	margin-right:20px;	
+}
+h3{
+	font-size:34px;
+	margin-bottom:20px;
+}
+h6{
+	font-size:26px;
+	margin-top:20px;
+}
+p.how-it-works-sub{
+	font-size: 20px;
+}
+}
+/*-----------PHONE Portrait-------------*/
+@media only screen and (max-width : 480px) {
+h1{
+	font-size:36px;
+}
+p {
+	font-size:14px;	
+}
+h4{
+	font-size:20px;
+}	
+}
